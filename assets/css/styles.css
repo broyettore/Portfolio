@@ -1,0 +1,190 @@
+/*==================== GOOGLE FONTS ======================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+/*==================== CSS VARIABLES ======================*/
+
+:root {
+
+    /*=====colors=======*/
+     --text-color: hsl(273, 38%, 100%);
+     --second-color: hsl(273, 38%, 13%);																																																																																					
+     --bg-color: hsl(273, 38%, 16%);
+     --second-bg-color: hsl(273, 38%, 100%);
+
+    /*=====fonts / typography =====*/
+    --body-font: 'Poppins', sans-serif;
+
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+
+    /*=============== Font Weight ==================*/
+    --font-extra-light: 200;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+
+    /*============== Margins Bottom ================*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+}
+
+
+/* ========================  BASE ===========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:var(--body-font)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 1.5625em 15%;
+    transition-duration: .3s;
+    border-bottom: 2px solid var(--text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+/*=============== NAVS ======================*/
+
+.nav-home {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+    letter-spacing: 1px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list a {
+    font-weight: var(--font-light);
+    font-size: var(--normal-font-size);
+    padding: 0.625em 1.25em;
+}
+
+.nav-btns i {
+    font-size: var(--big-font-size);
+}
+
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.125em;
+    background: var(--text-color);
+    left: 0;
+    bottom: -0.25em;
+    transition: ease .40s;
+}
+
+.nav-list a:hover::after {
+    width: 100%;
+}
+
+/*==================== REUSABLE CSS ======================*/
+
+
+
+
+
+
+
+
+/*==================== LAYOUT ======================*/
+
+
+
+
+
+
+/*==================== ABOUT ======================*/
+
+
+
+
+
+
+/*==================== SKILLS ======================*/
+
+
+
+
+
+
+
+/*==================== SERVICES ======================*/
+
+
+
+
+
+
+
+/*==================== PROJECTS ======================*/
+
+
+
+
+
+
+
+/*==================== FOOTER ======================*/
+
+
+
+
+
+
+
+
+/*==================== DARK / LIGHT THEME ======================*/
+
+
+
+
+
+
+
+/*==================== MEDIA QUERIES ======================*/
