@@ -8,7 +8,7 @@
     /*=====colors=======*/
      --text-color: hsl(273, 38%, 100%);
      --second-color: hsl(273, 38%, 13%);																																																																																					
-     --bg-color: hsl(265, 26%, 17%);
+     --bg-color: hsl(0, 50%, 13%);
      --second-bg-color: hsl(273, 38%, 100%);
      --span-color: hsl(0, 100%, 55%);
 
@@ -125,22 +125,15 @@ a {
     width: 100%;
 }
 
+.nav-social {
+    padding: 10px 20px 10px 0;
+}
+
 /*==================== REUSABLE CSS ======================*/
 
 section {
     padding: 7.5em 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-
-
-
-/*==================== LAYOUT ======================*/
-
-
-
-
 
 /*==================== HOME ======================*/
 
@@ -175,8 +168,12 @@ span {
 
 .home-text h3 {
     font-size: var(--h1-font-size);
+    margin-bottom: var(--m-2-5);
 }
 
+.socials {
+    font-size: var(--h1-font-size);
+}
 
 
 /*==================== ABOUT ======================*/
@@ -240,33 +237,136 @@ span {
     background: transparent;
 }
 
-
-/*==================== SKILLS ======================*/
-
-
-
-
-
-
-
 /*==================== SERVICES ======================*/
 
+.center {
+    text-align: center;
+}
+
+.center h1 {
+    font-size: var(--big-font-size);
+    font-weight: var(--font-regular);
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.5rem;
+}
+
+.row {
+    background-color: brown;
+    height: 350px;
+    padding: 55px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.row h3 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-light);
+    margin-bottom: var(--m-1);
+}
+
+.row p {
+    line-height: 30px;
+    font-weight: var(--font-extra-light);
+}
+
+.row:hover {
+    transform: translateY(-8px);
+}
 
 
 
 
+/*==================== Work ======================*/
 
+.work-content {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.5rem;
+}
 
-/*==================== PROJECTS ======================*/
+.work-item {
+    background-color: transparent;
+    border: 1px solid brown;
+    height: 350px;
+    padding: 55px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .35s;
+}
 
+.work-item p {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+}
 
+/*==================== Contact me ======================*/
 
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
 
+.contact-form h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--m-1);
+}
 
+.contact-form p {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-light);
+    margin-bottom: var(--m-1);
+}
+.contact-form h1,
+.contact-form p {
+    text-align: center;
+}
+
+.contact-form form input,
+form textarea {
+    width: 80%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: brown;
+    color: white;
+    margin-bottom: var(--m-0-5);
+    border-radius: 10px;
+}
+
+.send {
+    font-size: var(--small-font-size);
+    font-weight: bold;
+    cursor: pointer;
+}
 
 /*==================== FOOTER ======================*/
 
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+.footer p {
+    font-size: var(--normal-font-size);
+}
 
 
 
