@@ -6,11 +6,10 @@
 :root {
 
     /*=====colors=======*/
-     --text-color: hsl(273, 38%, 100%);
-     --second-color: hsl(273, 38%, 13%);																																																																																					
+     --text-color: hsl(273, 38%, 100%);																																																																																					
      --bg-color: hsl(0, 50%, 13%);
-     --second-bg-color: hsl(273, 38%, 100%);
      --span-color: hsl(0, 100%, 55%);
+     --container-color: hsl(1, 43%, 20%);
 
     /*=====fonts / typography =====*/
     --body-font: 'Poppins', sans-serif;
@@ -70,7 +69,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: transparent;
-    padding: 1.5625em 15%;
+    padding: 25px 15%;
     transition-duration: .3s;
 }
 
@@ -92,15 +91,21 @@ a {
     letter-spacing: 1px;
 }
 
-.nav-list {
+.nav-home:hover {
+    color: var(--span-color);
+    transition: ease .30s;
+    transform: scale(1.2);
+}
+
+.navbar {
     display: flex;
 }
 
-.nav-list li {
+.navbar li {
     position: relative;
 }
 
-.nav-list a {
+.navbar a {
     font-weight: var(--font-extra-light);
     font-size: var(--normal-font-size);
     padding: 0.625em 1.25em;
@@ -110,7 +115,7 @@ a {
     font-size: var(--big-font-size);
 }
 
-.nav-list a::after {
+.navbar a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -121,7 +126,7 @@ a {
     transition: ease .40s;
 }
 
-.nav-list a:hover::after {
+.navbar a:hover::after {
     width: 100%;
 }
 
@@ -175,6 +180,23 @@ span {
     font-size: var(--h1-font-size);
 }
 
+#menu-icon {
+    font-size: 25px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.change-theme {
+    cursor: pointer;
+}
+
+.change-theme:hover {
+    color: var(--span-color);
+    transition: ease .30s;
+}
+
 
 /*==================== ABOUT ======================*/
 
@@ -207,7 +229,7 @@ span {
 
 .about-text p {
     font-size: var(--normal-font-size);
-    font-weight: var(--font-light);
+    font-weight: var(--font-regular);
     letter-spacing: 1px;
     line-height: 28px;
     max-width: 590px;
@@ -257,7 +279,7 @@ span {
 }
 
 .row {
-    background-color: brown;
+    background-color: var(--container-color);
     height: 350px;
     padding: 55px 30px;
     border-radius: 10px;
@@ -279,9 +301,6 @@ span {
 .row:hover {
     transform: translateY(-8px);
 }
-
-
-
 
 /*==================== Work ======================*/
 
@@ -344,8 +363,8 @@ form textarea {
     padding: 20px;
     border: none;
     outline: none;
-    background: brown;
-    color: white;
+    background: var(--container-color);
+    color: var(--text-color);
     margin-bottom: var(--m-0-5);
     border-radius: 10px;
 }
@@ -356,30 +375,126 @@ form textarea {
     cursor: pointer;
 }
 
+.contact-form a:hover {
+    color: var(--span-color);
+}
+
 /*==================== FOOTER ======================*/
 
 .footer {
     text-align: center;
     background-color: black;
-    color: white;
+    color: var(--text-color);
     padding: 34px;
 }
 .footer p {
     font-size: var(--normal-font-size);
 }
 
-
-
-
-
-
-
 /*==================== DARK / LIGHT THEME ======================*/
 
-
-
-
-
-
+body.dark-theme {
+    --bg-color: #FFDEAD;
+    --text-color: #FFA500;
+    --span-color: white;
+    --container-color: #A0522D;
+     
+}
 
 /*==================== MEDIA QUERIES ======================*/
+
+@media (max-width: 1280px) {
+    header {
+        padding: 18px 4%;
+        transition: .2s;
+    }
+
+    header.sticky {
+        padding: 10px 4%;
+        transition: .2s;
+    }
+
+    section {
+        padding: 80px 4%;
+        transition: .2s;
+    }
+
+    .services-content {
+        grid-template-columns: repeat(2,2fr);
+    }
+
+    .work-content {
+        grid-template-columns: repeat(2,2fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .home {
+        height: 85vh;
+    }
+
+    #menu-icon {
+        display: initial;
+        margin-left: 80px;
+    }
+
+    .navbar {
+        position: absolute;
+        top: -700px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: black;
+        text-align: left;
+        transition: all .30s;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 1.1 rem;
+        margin: .5rem;
+        border-left: 2px solid white;
+    }
+
+    .navbar a:hover {
+        background: var(--span-color);
+    }
+
+    .navbar a::after {
+        display: none;
+    }
+
+    .navbar.active {
+        top: 100%;
+    }
+
+    .services-content {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .row {
+        height: 270px;
+    }
+
+    .work-content {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .about {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    :root {
+        --extra-big-font-size: 2rem;
+        --big-font-size: 1.5rem;
+        --h1-font-size: 1.25rem;
+        --h2-font-size: 1.125rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: .9rem;
+    }
+
+    .about-img{
+        text-align: center;
+        margin-bottom: var(--m-1);
+    }
+}
