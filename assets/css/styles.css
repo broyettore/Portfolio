@@ -411,7 +411,7 @@ body.dark-theme {
         transition: .2s;
     }
 
-    .services-content {
+    .skills-content {
         grid-template-columns: repeat(2,2fr);
     }
 
