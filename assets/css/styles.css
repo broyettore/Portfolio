@@ -516,7 +516,7 @@ body.dark-theme {
         margin-bottom: var(--m-1);
     }
 
-    .contact-form h1 {
+    .contact-form p {
         font-size: var(--normal-font-size);
     }
 
