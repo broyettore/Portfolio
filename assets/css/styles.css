@@ -282,7 +282,7 @@ span {
 
 .row {
     background-color: var(--container-color);
-    height: 350px;
+    height: auto;
     padding: 55px 30px;
     border-radius: 10px;
     cursor: pointer;
@@ -434,7 +434,7 @@ body.dark-theme {
     }
 
     .row {
-        height: 290px;
+        height: auto;
     }
 
     .work-content {
@@ -487,7 +487,7 @@ body.dark-theme {
     }
 
     .row {
-        height: 290px;
+        height: auto;
     }
 
     .work-content {
@@ -495,7 +495,7 @@ body.dark-theme {
     }
 
     .work-item {
-        height: 270px;
+        height: auto;
     }
 
     .about {
