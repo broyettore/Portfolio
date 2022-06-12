@@ -466,7 +466,7 @@ body.dark-theme {
 
 @media (max-width: 767px) {
     .home {
-        height: 100vh;
+        height: 85vh;
     }
 
     #menu-icon {
@@ -544,5 +544,11 @@ body.dark-theme {
 
     .contact-form a {
         font-size: var(--big-font-size);
+    }
+}
+
+@media (max-height: 500px) {
+    .home {
+        height: 120vh;
     }
 }
