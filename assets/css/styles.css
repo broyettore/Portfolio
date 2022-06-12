@@ -465,7 +465,7 @@ body.dark-theme {
 
 @media (max-width: 667px) {
     .home {
-        height: 85vh;
+        height: 95vh;
     }
 
     #menu-icon {
