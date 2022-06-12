@@ -161,7 +161,8 @@ header.sticky {
 .home-text h4 {
     font-size: var(--h3-font-size);
     letter-spacing: 0.125em;
-    
+    margin-top: var(--m-2-5);
+
 }
 
 .home-text h1 {
