@@ -55,19 +55,15 @@
     <!-------------------- Home section ---------------------->
     <section class="home" id="home">
         <div class="home-text">
-            <h4>Hello, my name is</h4>
-            <h1>Bagnarola <span>Roy</span></h1>
-            <h3>I'm a junior web developer</h3>
+            <h2>Hello, my name is</h2>
+            <h3>Bagnarola <span>Roy</span></h3>
+            <h4>I'm a junior web developer</h4>
         </div>
 
         <div class="socials">
             
             <a href="https://www.instagram.com/b.roy.ej/" target="_blank" class="nav-social">
                 <i class="uil uil-instagram"></i>
-            </a>
-
-            <a href="https://twitter.com/broyettore" target="_blank" class="nav-social">
-                <i class="uil uil-twitter-alt"></i>
             </a>
 
             <a href="https://www.linkedin.com/in/roy-ettore-bagnarola-889426240/" target="_blank" class="nav-social">
@@ -83,13 +79,13 @@
     <!-------------------- About section ---------------------->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="assets/images/Frontpic2.jpeg" alt="my-photo">
+            <img src="assets/images/profile-pic.jpg" alt="my-photo">
         </div>
 
         <div class="about-text">
-            <h1>About Me</h1>
-            <h4>Web Developer <span>& Designer</span></h4>
-            <p>My name is Bagnarola Roy, i'm a junior web developer based in Faenza (italy).</p>
+            <h2>About Me</h2>
+            <h3>Web Developer <span>& Designer</span></h3>
+            <h1>My name is Bagnarola Roy, i'm a junior web developer based in Faenza (italy).</h1>
             <p>When it comes to work, my main focus is to always provide a smooth user experience through
                 clean visuals and code.</p>
             <p>When i'm not working, i like to stay creative doing music, taking photos or making videos.</p>
@@ -100,15 +96,15 @@
     <!-------------------- Skills section ---------------------->
     <section class="skills" id="skills">
         <div class="center">
-            <h1>Skills</h1>
+            <h2>Skills</h2>
         </div>
 
         <div class="skills-content">
             <div class="row">
                 <h3>Front-End</h3>
-                <p>Html</p>
-                <p>Css</p>
-                <p>Javascript (not yet)</p>
+                <p><i class="uil uil-html5"></i>Html</p>
+                <p><i class="uil uil-css3-simple"></i>Css</p>
+                <p><i class="uil uil-java-script"></i>Javascript</i> (not yet)</p>
                 <p>Scss (Css extension)</p>
                 <p>Bootstrap (Css framework)</p>
             </div>
@@ -135,15 +131,15 @@
     <!--------------------- Work ---------------------------->
     <section class="work" id="work">
         <div class="center">
-            <h1>Work</h1>
+            <h2>Work</h2>
         </div>
 
         <div class="work-content">
             <div class="work-item">
-                <img src="assets/images/dark-bg.jpg" alt="project-display">
+                <img src="assets/images/in-the-process.jpg" alt="project-display">
                 <div class="work-card">
                     <h3>My Portfolio</h3>
-                    <p>my first project made with Html, Css and javascript.</p>
+                    <h4>my first project made with Html, Css and javascript.</h4>
                         <a href="https://broyettore.github.io/Portfolio/" target="_blank">
                             <button type="button" class="btn btn-work1">Live</button>
                         </a>
@@ -156,7 +152,7 @@
                 <img src="assets/images/in-the-process.jpg" alt="project-display">
                 <div class="work-card">
                     <h3>Future project inc !</h3>
-                    <p>in the process...</p>
+                    <h4>in the process...</h4>
                     <a href="#"">
                         <button type="button" class="btn btn-work1">Live</button>
                     </a>
@@ -169,7 +165,7 @@
                 <img src="assets/images/in-the-process.jpg" alt="project-display">
                 <div class="work-card">
                     <h3>Future Project inc !</h3>
-                    <p>in the process...</p>
+                    <h4>in the process...</h4>
                     <a href="#">
                         <button type="button" class="btn btn-work1">Live</button>
                     </a>
@@ -185,26 +181,28 @@
     <!--------------------- Contact me ---------------------------->
 
     <section class="contact" id="contact">
-        <div class="contact-form">
-            <h1>Contact Me</h1>
+        <div class="contact-text">
+            <h2>Contact Me</h2>
             <p>I am available for freelance work. If you are interested in what i do, 
-                you can get in touch with me through email : 
+                you can get in touch with me : 
             </p>
-            <a href="mailto:broyettore@gmail.com?Subject=Hello" target="_top"> 
-                broyettore@gmail.com
-           </a>
-        </div>
+
+            <form action="https://formsubmit.co/c4f3959c8b2a524c10cbda2b9c0e6b69" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="email (xyz@gmail.com)" required>
+                <input type="text" name="subject" placeholder="subject" required>
+                <textarea name="message" placeholder="Message" required cols="30" rows="10"></textarea>
+                <input type="submit" value="submit" class="send">
+            </form>
     </section>
 
     <!--------------------- Footer ---------------------------->
     <div class="footer">
         <p>Copyright © 2022 Bagnarola Roy. All Rights Reserved. </p>
     </div>
-
-
-
-    <!--------------------- Main JS ---------------------------->
-    <script type="text/javascript" src="assets/js/main.js"></script>
     
+    <!--------------------- Main JS ---------------------------->
+  
+    <script type="text/javascript" src="assets/js/main.js"></script> 
 </body>
 </html>
