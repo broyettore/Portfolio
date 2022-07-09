@@ -150,6 +150,8 @@ header.sticky {
 }
 
 .home {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     height: 100vh;
     width: 100%;
     background: url(../images/bg1.jpg);
@@ -231,14 +233,14 @@ span {
     margin-bottom: var(--m-1-5);
 }
 
-.about-text h3 {
+.about-text h1 {
     font-size: var(--h2-font-size);
     font-weight: var(--font-regular);
     margin-bottom: var(--m-2);
     letter-spacing: 2px;
 }
 
-.about-text p, h1 {
+.about-text p {
     text-align: left;
     font-size: var(--normal-font-size);
     font-weight: var(--font-regular);
@@ -280,7 +282,7 @@ span {
 
 .skills-content {
     display: grid;
-    grid-template-columns: repeat(3, 3fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     align-items: center;
     margin-top: 4.5rem;
@@ -288,7 +290,7 @@ span {
 
 .row {
     background-color: var(--container-color);
-    height: auto;
+    height: 100%;
     padding: 55px 30px;
     border-radius: 10px;
     cursor: pointer;
@@ -325,8 +327,8 @@ span {
 
 .work-item {
     background-color: var(--container-color);
-    height: auto;
-    padding: 55px 30px;
+    height: 100%;
+    padding: 40px 30px;
     border-radius: 10px;
     cursor: pointer;
     transition: ease .35s;
@@ -502,7 +504,7 @@ body.dark-theme {
     }
 
     .row {
-        height: auto;
+        height: 100%;
     }
 
     .work-content {
@@ -560,7 +562,7 @@ body.dark-theme {
     }
 
     .row {
-        height: auto;
+        height: 100%;
     }
 
     .work-content {
@@ -568,7 +570,7 @@ body.dark-theme {
     }
 
     .work-item {
-        height: auto;
+        height: 100%;
     }
 
     .about {
@@ -597,6 +599,25 @@ body.dark-theme {
         font-size: var(--big-font-size);
     }
 }
+
+
+@media only screen and (min-width: 553px) and (max-width: 767px)  {
+    .work-content {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .skills-content {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .contact-text form input,
+    form textarea {
+    width: 80%;
+    }
+}
+
 
 @media (max-height: 500px) {
     .home {
